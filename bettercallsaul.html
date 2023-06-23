@@ -4,9 +4,253 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bettercallsaul.css" />
     <title>Better call Saul</title>
+    <!--<link rel="stylesheet" href="index.js" />-->
   </head>
   <body>
-    <a href="index.html">Inicio</a>
+    <div class="borda">
+      <main>
+<!-- Barra de Navegacao-->
+        <header>
+          <div class="nav-bar">
+            <div class="logo">
+              <img src="BreakingBadImagens/logo bcs.png" alt="better call Saul logo">
+            </div>
+            <ul class="nav-list">
+              <li><a href="news.html">News</a></li>
+              <li><a href="elenco.html">Elenco</a></li>
+              <li><a href="premiacoes.html">Premiacoes</a></li>
+              <li><a href="index.html">Inicio</a></li>
+            </ul>
+          </div>
+        </header>
+        <div class="slider">
+          <div class="slides">
+            <!--Botoes do Slider-->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <!--Imagens do Slider-->
+            <div class="slide first">
+              <img
+                src="https://www.alamy.com/breaking-bad-high-bridgegran-via-productions-sony-pictures-television-image62206000.html?imageid=DA6511EB-925A-44AF-80D0-00138905E38A&p=13044&pn=1&searchId=1cf4baf34c7749f266a35d7a0974b886&searchtype=0"
+                alt="Imagem1"
+              />
+            </div>
+            <div class="slide first">
+              <img
+                src="https://wallpaperaccess.com/breaking-bad"
+                alt="Imagem2"
+              />
+            </div>
+            <div class="slide first">
+              <img
+                src="https://depositphotos.com/222345268/stock-photo-underground-laboratory-two-clandestine-chemists.html"
+                alt="Imagem3"
+              />
+            </div>
+            <!--Navigation Auto-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+            <!--Label dos botoes-->
+            <div class="manual-navigation">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+            </div>
+          </div>
+        </div>
+        <!--Aqui comeca o Grid de "Noticias Relevantes"-->
+        <div class="conteudo">
+          <div class="noticias">
+            <h2>Noticias Relevantes</h2>
+          <div class="noticiasrel" id="noticia1">
+            <div class="imagens">
+              <img
+                src="BreakingBadImagens/saulgoodman2.jpg"
+                alt="Saul e carro amarelo"
+              />
+            </div>
+            <div class="titulos">
+              <h3>Antes de "Breaking Bad"</h3>
+            </div>
+            <div class="textos">
+              <p>
+                “Better Call Saul” serie derivada de Breaking Bad, sera um
+                preludio da historia de Walter White and Jesse Pinkman...
+              </p>
+            </div>
+            <div class="links">
+              <a
+                href="https://www.omelete.com.br/better-call-saul#:~:text=Better%20Call%20Saul%2C%20s%C3%A9rie%20derivada,p%C3%BAblicas%2C%20Saul%20faz%20de%20tudo."
+              >Leia mais +
+              </a>
+            </div>
+          </div>
+          <div class="noticiasrel" id="noticia2">
+            <div class="imagens">
+              <img
+                src="BreakingBadImagens/elcamino3.jpg"
+                alt="Jesse Pinkman e Walter White"
+              />
+            </div>
+            <div class="titulos">
+              <h3>"El Camino"</h3>
+            </div>
+            <div class="textos">
+              <p>
+                Filme inspirado em “Breaking Bad” tem data de estreia, veja
+                sinopse...
+              </p>
+            </div>
+            <div class="links">
+              <a
+                href="https://www.omelete.com.br/netflix/criticas/el-camino-a-breaking-bad-movie"
+                >Leia mais +
+              </a>
+            </div>
+          </div>
+          <div class="noticiasrel" id="noticia3">
+            <div class="imagens">
+              <img
+                src="BreakingBadImagens/saulgoodman3.jpg"
+                alt="Saul no telefone"
+              />
+            </div>
+            <div class="titulos">
+              <h3>“Better Call Saul” x “Breaking Bad”</h3>
+            </div>
+            <div class="textos">
+              <p>
+                “Better Call Saul” tera cenas durante a trama de “Breaking
+                Bad”...
+              </p>
+            </div>
+            <div class="links">
+              <a
+                href="https://rollingstone.uol.com.br/entretenimento/better-call-saul-tera-ainda-mais-cenas-com-walter-e-jesse-diz-bob-odenkirk/"
+                >Leia mais +
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--Aqui comeca o Grid de "Episodios + vistos"-->
+        <section class="maisvistos">
+          <h3>Mais vistos</h3>
+          <div class="maisvistos1">
+            <div class="imagens">
+              <img
+                src="/BreakingBadImagens/saulgoodman4.jpg"
+                alt="Saul no deserto"
+              />
+            </div>
+            <div class="titulos">
+              <h3>"A Saida de Saul"</h3>
+            </div>
+            <div class="textos">
+              <p>
+              O desfecho para a trama do famoso advogado, tornou-se o mais
+              assistido da historia da serie....
+              </p>
+            </div>
+          </div>
+          <div class="maisvistos1">
+            <div class="imagens">
+              <div class="imagens">
+                <img
+                src="BreakingBadImagens/chuckmcgill1.jpg"
+                alt="Chuck sentado"
+                />
+              </div>
+            </div>
+            <div class="titulos">
+              <h3>"Lanterna"</h3>
+            </div>
+            <div class="textos">  
+              <p>
+              Lanterna é um epílogo das relações de Chuck com seu irmão Jimmy e
+              Howard...
+              </p>
+            </div>
+          </div>
+          <div class="maisvistos1">
+            <div class="imagens">
+              <img
+                src="BreakingBadImagens/saulgoodman5.jpg"
+                alt="Saul e bandeira dos EUA"
+              />
+            </div>
+            <div class="titulos">
+              <h3>"Nailed"</h3>
+            </div>
+            <div class="textos">
+              <p>
+              Chuck conta a Kim sobre a manipulação e acusa Jimmy de fraude...
+              </p>
+            </div>
+          </div>
+          <div class="maisvistos1">
+            <div class="imagens">
+              <img
+                src="BreakingBadImagens/saulgoodman6.jpg"
+                alt="Saul de bracos abertos"
+              />
+            </div>
+            <div class="titulos">
+              <h3>"Algo Lindo"</h3>
+            </div>
+            <div class="textos">
+              <p>Jimmy pede a Mike que roube algo muito caro...</p>
+            </div>
+          </div>
+          <div class="maisvistos1">
+            <div class="imagens">
+              <img
+                src="BreakingBadImagens/lalosalamanca.jpg"
+                alt="Lalo Salamanca"
+              />
+            </div>
+            <div class="titulos">
+              <h3>"Imperdoavel"</h3>
+            </div>
+            <div class="textos">
+              <p>
+              Lalo vira o jogo contra os homens enviados para matá-lo, usando
+              utensílios de cozinha e astúcia...
+              </p>
+            </div>
+          </div>
+          <div class="maisvistos1">
+            <div class="imagens">
+              <img src="BreakingBadImagens/saulgoodman7.jpg" alt="Saul e Kim" />
+            </div>
+            <div class="titulos">
+              <h3>"Vencedor"</h3>
+            </div>
+              
+            <div class="textos"><p>
+              Jimmy muda seu nome para Saul Goodmane conquista uma nova
+              clientela...
+              </p>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="footer-info">
+            <h3>Redes Sociais</h3>
+            <ul class="social-media">
+              <li><a href="https://www.facebook.com/BetterCallSaulAMC/">Facebook</a></li>
+              <li><a href="https://www.facebook.com/BetterCallSaulAMC/">Instagram</a></li>
+              <li><a href="https://twitter.com/BetterCallSaul">Twitter</a></li>
+              <li><a href="https://www.youtube.com/show/SCxGG4KAzSXt2hXN9v3tTG5A?season=5&sbp=CgE1">YouTube</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>
