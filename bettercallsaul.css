@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +7,22 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+h1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 .nav-bar {
   background-color: #006400;
-  width: 1440px;
+  width: 100%;
   height: 70px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.logo {
+  height: 100%;
 }
 
 .nav-bar a {
@@ -27,13 +37,60 @@
   display: flex;
   gap: 2rem;
 }
-
-h3 {
-  font-weight: bold;
-  font-size: 24px;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.conteudo a {
+.maisvistos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  flex: 0 0 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.maisvistoscard {
+  flex: 0 0 170px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.text2 {
+  padding: 0 20px 20px;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card .text {
+  padding: 0 20px 20px;
+}
+
+.card .text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+/*Formatacao dos links*/
+
+.card a {
+  margin-left: 2px;
   padding: 5px;
   background-color: gold;
   color: black;
@@ -41,110 +98,68 @@ h3 {
   text-decoration: none;
 }
 
-.noticiasrel {
-  width: 600px;
-  /* border: 2px solid purple;*/
-  padding: 5px;
-  display: grid;
-  grid-template-columns: 62% 38%;
-  grid-template-rows: 25% 50% 25%;
-  grid-template-areas:
-    "imagens titulos"
-    "imagens textos"
-    "imagens links";
-  gap: 3px;
+ h3{
+  font-size: 20px !important;
+}
+.card p {
+  margin-bottom: 15px;
 }
 
-.conteudo {
-  display: grid;
-  /*grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "noticias noticias +vistos" "noticias noticias +vistos" "noticias noticias +vistos";
-*/
-}
-
-.noticias {
- /* grid-area: noticias;*/
-}
-
-.maisvistos {
-  width: 300px;
-  border: 2px solid #006400;
-  grid-area: +vistos;
-}
-/*.borda {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas:
-    "nav nav nav nav"
-    "slider slider slider slider"
-    "conteudo conteudo maisvistos maisvistos"
-    "conteudo conteudo maisvistos maisvistos"
-    "footer footer footer footer";
-}*/
-
-/*.noticias {
-  width: 500px;
-  border: 2px solid red;
-}*/
-
-/*.maisvistos1 {
-  width: 500px;
-  border: 2px solid rgb(58, 128, 0);
-}*/
-
-/*.slider {
-  grid-area: slider;
-}
-
-#noticia1 {
-  grid-area: noitica1;
-}
-
-#noticia2 {
-  grid-area: noticia2;
-}
-
-#noticia3 {
-  grid-area: noticia3;
-}*/
-
-.imagens {
-  grid-area: imagens;
-}
-
-.titulos {
-  grid-area: titulos;
-}
-
-.textos {
-  grid-area: textos;
-}
-
-.links {
-  grid-area: links;
-  display: flex;
-  align-items: last baseline;
-}
-
-footer {
+.container {
+  max-width: 1170px;
   background-color: #006400;
-  width: 1440px;
-  height: 150px;
-  color: #ffffff;
-  padding-left: 5px;
+  margin: auto;
 }
 
-.footer-info a {
-  background-color: #006400;
-  color: #ffffff;
+.row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
-.social-media {
-  display: flex;
-  text-decoration: none;
+.footer {
+  background-color: white;
+  padding: 20px 0;
+}
+
+.footer-col {
+  width: 100%;
+  padding: 0 10px;
+}
+
+h4 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: white;
+  height: 2px;
+  box-sizing: border-box;
+  width: 65px;
+}
+
+a:hover {
+  color: #06f706;
+  padding-left: 8px;
+}
+
+.social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  margin: 0 20px 20px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #006400;
+  transition: all 0.5s ease;
 }
